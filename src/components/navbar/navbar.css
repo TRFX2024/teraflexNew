@@ -1,0 +1,71 @@
+.link{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.link::before{
+    content: " ";
+    width: 2rem;
+    height: .2rem;
+    position: absolute;
+    background: linear-gradient(90deg, #d91111 0%, #ad0e0e 100%);
+    border-radius: .5rem;
+    bottom: -.4rem;
+    opacity: 0;
+    transform: translate(-1.2rem);
+    transition: all 0.3s ease;
+}
+.link:hover::before{
+    width: 100%;
+    opacity: 1;
+    transform: translate(0);
+}
+.link:hover{
+    color: #ad0e0e;
+}
+.links{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    place-items: center;
+    padding: 1rem 15rem;
+}
+.logo{
+    width: 14rem;
+    cursor: pointer;
+}
+.navbar{
+    background: white;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+
+}
+.link-a{
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+.link-a::before{
+    content: " ";
+    width: 2rem;
+    height: .2rem;
+    position: absolute;
+    background: linear-gradient(90deg, #d91111 0%, #ad0e0e 100%);
+    border-radius: .5rem;
+    bottom: .6rem;
+    opacity: 0;
+    transform: translate(-1.2rem);
+    transition: all 0.3s ease;
+}
+.link-a:hover::before{
+    width: 100%;
+    opacity: 1;
+    transform: translate(0);
+}
+.link-a:hover{
+    color: #ad0e0e;
+}
+.ant-dropdown-menu-item-active{
+    color: #ad0e0e !important;
+    transition: none !important;
+}
