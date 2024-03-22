@@ -35,25 +35,3 @@
     background: #000;
     color: white;
 }
-.icons{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    place-items: center;
-    margin-top: 5rem;
-}
-.icon{
-    font-size: 3rem;
-    transition: all 0.3s ease;
-    color: #d91111;
-}
-.icon:hover{
-    transform: translateY(-.5rem);
-}
-.text{
-    font-size: 1.3rem;
-}
-.text-icons{
-    display: grid;
-    place-items: center;
-    cursor: pointer;
-}

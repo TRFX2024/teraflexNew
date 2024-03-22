@@ -1,0 +1,27 @@
+.pImage{
+    width: 100%;
+    height: 27rem;
+}
+.panoramic{
+    width: 100%;
+    margin-top: 7rem;
+}
+.pImage{
+    display: block;
+    filter: brightness(70%);
+    z-index: -1;
+}
+
+.ps-content{
+    position: relative;
+    display: flex;  
+}
+.vista {
+    position: absolute;
+    z-index: 1;
+    top: 30%;
+    left: 35%;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+}

@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './cardhome.css';
 import { EditOutlined, EllipsisOutlined, SettingOutlined } from '@ant-design/icons';
-import { Avatar, Card } from 'antd';
+import { Card } from 'antd'
 const { Meta } = Card;
 import producto from '../../imgs/camera1.jpg';
+import ButtonMas from './button/BtnMas';
 const CardHome = () => {
-    return (
+    const name = "default";
+    return (    
         <div className='card'>
             <div className="card-content">
                 <Card
@@ -19,17 +21,15 @@ const CardHome = () => {
                         />
                     }
                     actions={[
-                        <SettingOutlined key="setting" />,
-                        <EditOutlined key="edit" />,
+                        <ButtonMas name={name}/>,
                         <EllipsisOutlined key="ellipsis" />,
                     ]}
                 >
                     <Meta
                         title="TANDEMVU"
-                        description="Panorama general y detalles en una sola vista. Las cámaras TandemVu PTZ cuentan con el diseño de cámaras de próxima generación de Hikvision, integrando múltiples lentes en una cámara de seguridad para proporcionar una imagen grande y pequeños detalles.
+                        description="Panorama general y detalles en una sola vista. Las cámaras TandemVu PTZ cuentan con el diseño de cámaras de próxima generación de Hikvision, integrando múltiples lentes en una cámara de seguridad para proporcionar una imagen grande y pequeños detalles.....
                         "
                     />
-                    <button>Hola</button>
                 </Card>
             </div>
         </div>

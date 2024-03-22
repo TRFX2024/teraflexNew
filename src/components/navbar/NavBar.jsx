@@ -3,6 +3,7 @@ import "./navbar.css";
 import logo from "../../imgs/logoGrande.png";
 import { ApiOutlined, DatabaseOutlined, DownOutlined, ProjectOutlined, SmileOutlined } from '@ant-design/icons';
 import { Dropdown, Space } from 'antd';
+import { Link } from 'react-router-dom';
 const NavBar = () => {
     const items = [
         {
@@ -36,9 +37,9 @@ const NavBar = () => {
     return (
         <div className='navbar'>
             <div className="links">
-                <img src={logo} className='logo' alt="" />
-                <a href="#" className='link'>Inicio</a>
-                <a href="#" className='link'>Quiénes somos</a>
+                <Link to={"/"}><img src={logo} className='logo' alt="" /></Link>
+                <Link to={"/"} className='link'><a href="#" className='link'>Inicio</a> </Link>
+                <Link className='link' to={"/quienes"}> <a href="#" className='link'>Quiénes somos</a></Link>
                 <a href="#" className='link'>Contacto</a>
                 <a href="#" className='link'>Soporte</a>
                 <a href="#" className='link'>Sistena de pórticos</a>

@@ -11,7 +11,6 @@ const Products = () => {
                     <CardHome/>
                     <CardHome/>
                     <CardHome/>
-                    <CardHome/>
                 </div>
             </div>
         </div>

@@ -1,0 +1,18 @@
+.footer{
+    width: 20rem;
+   padding: 1rem;
+    height: 12rem;
+    display: grid;
+}
+.ref{
+    text-decoration: none;
+    color: white;
+}
+.footer-container{
+    display: grid;
+    width: 100%;
+    background: linear-gradient(90deg, #d91111 0%, #ad0e0e 100%);
+    grid-template-columns: repeat(3, 1fr);
+    height: 20rem;
+    place-items: center;
+}
