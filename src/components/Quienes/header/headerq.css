@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oswald:wght@200..700&display=swap');
+
 .headerq{
     width: 100%;
     height: 40rem;
@@ -15,9 +17,15 @@
 .header-text{
     color: white;
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    place-items: center;
     height: 100%;
     position: relative;
+}
+.header-conts{
+    display: grid;
+    grid-template-rows: 10rem 1fr;
+    place-items: center;
+    height: 30rem;
 }
 .parrafo-header{
     width: 100%;
@@ -34,10 +42,15 @@
    display: grid;
    place-items: center;
    margin: 0; 
+   font-size: 3rem;
+   font-family: "Oswald", sans-serif;
 }
 .par-header{
     display: grid;
+    width: 70%;
     place-items: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 2rem;
 }
 .header-text::before{
     content: '';

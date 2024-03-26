@@ -27,7 +27,7 @@
     display: grid;
     grid-template-columns: repeat(8, 1fr);
     place-items: center;
-    padding: 1rem 15rem;
+    padding: 1rem 5rem;
 }
 .logo{
     width: 14rem;
@@ -68,4 +68,47 @@
 .ant-dropdown-menu-item-active{
     color: #ad0e0e !important;
     transition: none !important;
+}
+.btn-resp span{
+    font-size: 1.8rem;
+}
+.btn-resp{
+    width: 3rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-weight: 900;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: .5rem;
+    border: none;
+    color: #fff;
+    background: linear-gradient(90deg, #d91111 0%, #ad0e0e 100%);
+    line-height: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: none;
+}
+.btn-resp:hover{
+    color: #d91111;
+    background: #000;
+    border: 1px solid #d91111;
+}
+
+@media (max-width: 764px){
+    .btn-resp{
+        display: block;
+    }
+    .link, .link-a{
+        display: none;
+    }
+    .links{
+        display: grid;
+        grid-template-columns: none !important;
+    }
+    .navbar{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        place-items: center;
+    }
 }

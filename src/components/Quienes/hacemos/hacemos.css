@@ -1,0 +1,53 @@
+.hacemos{
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+}
+.hacemos-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.img-hacemos{
+    height: 15rem;
+    width: 15rem;
+    border-radius: .3rem;
+}
+.info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 1.2rem;
+    column-gap: 3rem;
+    place-items: center;
+}
+.info-text{
+    display: grid;
+    place-items: center;
+    width: 85%;
+}
+.text-li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+.text-ul{
+    display: grid;
+    gap: 1rem;
+}
+.info-c{
+    display: grid;
+    place-items: center;
+}
+.text-icons{
+    display: grid;
+    gap: .9rem;
+    grid-template-columns: 2rem 1fr;
+    cursor: auto;
+}
+.icon-check{
+    color: #ad0e0e;
+    font-size: 2rem;
+}
+.text-img{
+    font-size: 1.2rem;
+}
