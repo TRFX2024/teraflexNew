@@ -41,4 +41,16 @@
     .p-text{
         font-size: 1.2rem;
     }
+    .vista {
+        top: 30%;
+        left: 35%;
+    }
+}
+@media (max-width: 400px) {
+    .p-text{
+        font-size: 1rem;
+    }
+    .vista {
+        left: 20% !important;
+    }
 }

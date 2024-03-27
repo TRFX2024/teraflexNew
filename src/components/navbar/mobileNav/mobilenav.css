@@ -70,3 +70,8 @@
 .decor{
     text-decoration: none;
 }
+@media (max-width: 400px) {
+    .li-menu{
+        font-size: .8rem;
+    }
+}

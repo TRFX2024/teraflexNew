@@ -64,3 +64,12 @@
         font-size: 1.5rem;
     }
 }
+@media (max-width: 577px) {
+    .info{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .hacemos-cont{
+        display: block;
+    }
+}

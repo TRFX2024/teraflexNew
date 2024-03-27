@@ -68,3 +68,11 @@
         font-size: 1.5rem;
     }
 }
+@media (max-width: 400px) {
+    .texto-header{
+        font-size: 1.5rem;
+    }
+    .par-header{
+        font-size: 1.2rem;
+    }
+}
