@@ -5,6 +5,7 @@
 .panoramic{
     width: 100%;
     margin-top: 7rem;
+    place-items: center;
 }
 .pImage{
     display: block;
@@ -14,7 +15,8 @@
 
 .ps-content{
     position: relative;
-    display: flex;  
+    display: flex;
+    width: 100%;
 }
 .vista {
     position: absolute;
@@ -24,4 +26,19 @@
     color: white;
     font-size: 3rem;
     font-weight: bold;
+}
+.p-text{
+    font-size: 1.5rem;
+    width: 90%;
+    margin: 3rem 0rem;
+}
+.p-texts{
+    display: grid;
+    width: 100%;
+    place-items: center;
+}
+@media (max-width: 800px) {
+    .p-text{
+        font-size: 1.2rem;
+    }
 }

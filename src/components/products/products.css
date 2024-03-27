@@ -8,3 +8,9 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
 }
+@media (max-width: 1000px) {
+    .p-content{
+        grid-template-columns: none;
+        grid-template-rows: repeat(3, 1fr);
+    }
+}

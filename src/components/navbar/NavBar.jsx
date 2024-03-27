@@ -1,44 +1,15 @@
 import React, { useState } from 'react';
 import "./navbar.css";
 import logo from "../../imgs/logoGrande.png";
-import { ApiOutlined, DatabaseOutlined, DownOutlined, ProjectOutlined, SmileOutlined } from '@ant-design/icons';
-import { Dropdown, Space } from 'antd';
 import { Link } from 'react-router-dom';
 import MobileNav from './mobileNav/MobileNav';
+import { MenuOutlined } from '@ant-design/icons';
 const NavBar = () => {
   const [isOpen, setOpen] = useState(false);
   const toggleMenu = () => {
     setOpen(!isOpen);
   }
-  const items = [
-    {
-      key: '1',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-          Proyectos
-        </a>
-      ),
-      icon: <ProjectOutlined />,
-    },
-    {
-      key: '2',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-          Convenio de Mantenimiento
-        </a>
-      ),
-      icon: <ApiOutlined />,
-    },
-    {
-      key: '3',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-          Datos y Electricidad
-        </a>
-      ),
-      icon: <DatabaseOutlined />,
-    }
-  ];
+
   return (
     <>
       <MobileNav isOpne={isOpen} toggleMenu={toggleMenu} />
@@ -48,29 +19,13 @@ const NavBar = () => {
           <Link to={"/"} className='link'><a href="#" className='link'>Inicio</a> </Link>
           <Link className='link' to={"/quienes"}> <a className='link'>Quiénes somos</a></Link>
           <Link className='link' to={'/contacto'}><a className='link'>Contacto</a></Link>
-          <a href="#" className='link'>Soporte</a>
-          <a href="#" className='link'>Sistena de pórticos</a>
-          <a href="#" className='link'>Revisa tus cámaras</a>
-          <Dropdown
-            className='dropdown'
-            menu={{
-              items,
-            }}
-          >
-            <a onClick={(e) => e.preventDefault()}>
-              <Space className='link-a'>
-                <p>Servicios</p>
-                <DownOutlined />
-              </Space>
-            </a>
-          </Dropdown>
-          
+          <a href="https://soporte.montepalermo.cl/" className='link'>Soporte</a>
+          <a href="#" className='link'>Sistema de pórticos</a>
+          <a href="https://isa.hik-connect.com/views/login/index.html?returnUrl=http://isa.hik-connect.com/devices/page&r=6577528085788024406&host=isa.hik-connect.com&from=c17392dc2e6c405a931b#/main/overview" className='link'>Revisa tus cámaras</a>
         </div>
         <button className='btn-resp' onClick={toggleMenu}>
-            <span class="material-symbols-outlined">
-              menu
-            </span>
-          </button>
+          <MenuOutlined classID='menu-icon'/>
+        </button>
       </div>
     </>
 

@@ -25,7 +25,7 @@
 }
 .links{
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(7, 1fr);
     place-items: center;
     padding: 1rem 5rem;
 }
@@ -36,9 +36,10 @@
 .navbar{
     background: white;
     position: fixed;
-    z-index: 1;
+    z-index: 1000000000;
     width: 100%;
-
+    display: grid;
+    place-items: center;
 }
 .link-a{
     text-decoration: none;
@@ -69,12 +70,12 @@
     color: #ad0e0e !important;
     transition: none !important;
 }
-.btn-resp span{
+.menu-icon{
     font-size: 1.8rem;
 }
 .btn-resp{
-    width: 3rem;
-    height: 3rem;
+    width: 2rem;
+    height: 2rem;
     font-size: 1.2rem;
     font-weight: 900;
     display: flex;
@@ -82,20 +83,32 @@
     justify-content: center;
     border-radius: .5rem;
     border: none;
-    color: #fff;
-    background: linear-gradient(90deg, #d91111 0%, #ad0e0e 100%);
+    color: #ad0e0e ;
+    /* background: linear-gradient(90deg, #d91111 0%, #ad0e0e 100%); */
+    background: white;
+    outline: 1px solid #ad0e0e;
     line-height: 0;
     cursor: pointer;
     transition: all 0.3s ease;
     display: none;
 }
 .btn-resp:hover{
-    color: #d91111;
-    background: #000;
-    border: 1px solid #d91111;
+    color: white;
+    background: #ad0e0e;
+    border: 1px solid #ad0e0e;
 }
 
-@media (max-width: 764px){
+
+@media (max-width: 1300px) {
+        .logo{
+            width: 9rem;
+        }
+        .links{
+            grid-template-columns: repeat(7, 9rem) !important;
+            padding: 1rem 3rem !important;
+        }
+}
+@media (max-width: 1080px){
     .btn-resp{
         display: block;
     }
@@ -108,7 +121,7 @@
     }
     .navbar{
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 5fr 1fr;
         place-items: center;
     }
 }

@@ -1,10 +1,14 @@
 import React from 'react';
 import './header.css';
+import Map from './map/Map';
+import Formulario from './formulario/Formulario';
+
 
 const Header = () => {
     return (
         <div className='header-c'>
-            <h1>Mapa</h1>
+            <Map/>
+            <Formulario/>
         </div>
     );
 }

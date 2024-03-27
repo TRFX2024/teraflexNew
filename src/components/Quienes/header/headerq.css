@@ -60,3 +60,11 @@
     z-index: -1;
     background: linear-gradient(180deg, #d91111d0 0%, #ad0e0e67 100%);
 }
+@media (max-width: 800px) {
+    .texto-header{
+        font-size: 2rem;
+    }
+    .par-header{
+        font-size: 1.5rem;
+    }
+}

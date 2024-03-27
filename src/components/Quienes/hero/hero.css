@@ -24,3 +24,23 @@
     display: grid;
     place-items: center;
 }
+
+@media (max-width:1040px ) {
+    .hero-text p{
+        font-size: 1.2rem;
+    }
+    .hero-container{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        margin: 0;
+        width: 100%;
+    }
+    .mision{
+        width: 100%;
+        height: 20rem;
+        object-fit: fill;
+    }
+    .hero-text{
+        width: 90%;
+    }
+}

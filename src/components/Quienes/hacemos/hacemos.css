@@ -33,6 +33,7 @@
 .text-ul{
     display: grid;
     gap: 1rem;
+    padding: 0;
 }
 .info-c{
     display: grid;
@@ -50,4 +51,16 @@
 }
 .text-img{
     font-size: 1.2rem;
+}
+@media (max-width: 1090px) {
+    .hacemos-cont{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+    }
+    .text-li{
+        font-size: 1rem;
+    }
+    .icon-check{
+        font-size: 1.5rem;
+    }
 }

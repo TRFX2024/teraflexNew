@@ -1,7 +1,6 @@
 .icons{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    padding: 0 17rem;
     place-items: center;
     margin-top: 5rem;
 }

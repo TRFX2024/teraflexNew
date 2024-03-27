@@ -35,3 +35,9 @@
     background: #000;
     color: white;
 }
+
+@media (max-width: 900px) {
+    .banner{
+        height: 22.5rem;
+    }
+}

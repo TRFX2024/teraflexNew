@@ -1,0 +1,66 @@
+.pano-img{
+    height: 20rem;
+    width: 100%;
+    border-radius: .5rem;
+    object-fit: cover;
+}
+.header-sc{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    width: 70%;
+}
+.headerpano{
+    width: 100%;
+    display: grid;
+    place-items: center;
+    gap: 5rem;
+    margin: 3rem 0rem;
+}
+.pano-text p{
+    font-size: 1.1rem;
+}
+.ver-mas{
+    display: grid;
+    grid-template-columns: 4rem 1rem;
+    height: 1rem;
+    width: min-content;
+    place-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.ver-mas::before{
+    content: " ";
+    width: 2rem;
+    height: .2rem;
+    position: absolute;
+    background: linear-gradient(90deg, #d91111 0%, #ad0e0e 100%);
+    border-radius: .5rem;
+    bottom: -.7rem;
+    opacity: 0;
+    transform: translate(-1.2rem);
+    transition: all 0.3s ease;
+}
+.ver-mas:hover::before{
+    width: 100%;
+    opacity: 1;
+    transform: translate(0);
+}
+.ver-mas:hover{
+    color: #ad0e0e;
+}
+.ver-mas p{
+    margin: 0;
+}
+@media (max-width: 970px) {
+    .header-sc{
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr;
+        gap: 1rem;
+    }
+}
+@media (max-width: 600px) {
+    .vista{
+        left: 25%;
+    }
+}

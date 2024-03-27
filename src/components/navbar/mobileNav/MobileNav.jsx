@@ -1,5 +1,6 @@
 import React from 'react';
 import './mobilenav.css';
+import { Link } from 'react-router-dom';
 
 const MobileNav = ({ isOpne, toggleMenu }) => {
     return (
@@ -7,11 +8,12 @@ const MobileNav = ({ isOpne, toggleMenu }) => {
              <div className={`mobile-menu ${isOpne ? "active" : ""}`} onClick={toggleMenu}>
                 <div className="mobil-cont">
                     <ul>
-                        <li><a className='menu-item'>Inicio</a></li>
-                        <li><a className='menu-item'>Skills</a></li>
-                        <li><a className='menu-item'>Experience</a></li>
-                        <li><a className='menu-item'>Contact me</a></li>
-                        <button className='btn-contact' >Hire me</button>
+                        <Link className='decor' to={'/'}><li className='li-menu'>Inicio</li></Link>
+                        <Link className='decor' to={'/quienes'}> <li className='li-menu'>Quiénes somos</li></Link>
+                        <li className='li-menu'>Contacto</li>
+                        <li className='li-menu'>Soporte</li>
+                        <li className='li-menu'>Sistema de pórticos</li>
+                        <li className='li-menu'>Revisa tus cámaras</li>
                     </ul>
                 </div>
             </div>
