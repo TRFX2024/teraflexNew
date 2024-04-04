@@ -11,7 +11,7 @@ const Header = () => {
             <div className="homeContent">
                 <Carousel autoplay autoplaySpeed={5000} className='carruselCont'>
                     <div className='ban-cont'>
-                        <button className='btn-conocenos'>Quiénes somos</button>
+                        {/* <button className='btn-conocenos'>Quiénes somos</button> */}
                         <img src={banner1} className='banner' alt="" />
 
                     </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import './headerpano.css';
 import cobertura from '../../../imgs/cobertura.jpg';
-import eptz from '../../../imgs/eptz.jpg';
-import funcion from '../../../imgs/funcionE.jpg';
-import pantalla from '../../../imgs/panorama.png';
+import eptz from '../../../imgs/camara.jpg';
+import funcion from '../../../imgs/epz.jpg';
+import pantalla from '../../../imgs/ar.png';
 import { ArrowRightOutlined } from '@ant-design/icons';
 const HeaderPano = () => {
     return (
@@ -25,7 +25,7 @@ const HeaderPano = () => {
             </div>
             <div className="header-sc">
                 <div className="pano-text">
-                    <h1>EXCELENTE RELACIÓN PRECIO/CALIDAD</h1>
+                    <h1>EXCELENTE RELACIÓN CALIDAD</h1>
                     <p>
                         Una cámara panorámica puede reemplazar múltiples cámaras convencionales,
                         lo que reduce en gran medida los costos de instalación, cableado y

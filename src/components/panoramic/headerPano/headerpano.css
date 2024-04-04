@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     place-items: center;
+    gap: 1rem;
     width: 70%;
 }
 .headerpano{
@@ -28,6 +29,7 @@
     place-items: center;
     position: relative;
     cursor: pointer;
+    display: none;
 }
 .ver-mas::before{
     content: " ";

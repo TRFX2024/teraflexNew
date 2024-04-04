@@ -1,0 +1,41 @@
+.iconss{
+    background-color: rgb(153, 153, 153);
+    height: 13rem;
+    display: grid !important;
+    place-items: center;
+    color: white;
+    font-size: 10rem;
+}
+.test-container{
+    width: 70%;
+}
+.card{
+    width: 50%;
+    height: auto;
+}
+.test-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.test{
+    display: grid;
+    place-items: center;
+    margin: 2rem 0;
+}
+.desc{
+    color: black;
+}
+.imgHikes{
+    width: 100%;
+}
+@media (max-width: 900px) {
+    .test-content{
+        flex-direction: column;
+        align-items: center;
+    }
+    .card{
+        width: auto;
+        height: auto;
+    }
+}

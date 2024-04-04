@@ -1,6 +1,6 @@
 import React from 'react';
 import './panoramic.css';
-import panoramic from '../../imgs/panoramic.jpg';
+import panoramic from '../../imgs/panoramica.jpg';
 import HeaderPano from './headerPano/HeaderPano';
 
 const Panoramic = () => {
@@ -12,12 +12,7 @@ const Panoramic = () => {
             </div>
             <div className="p-texts">
                 <p className='p-text'>
-                    El sistema panorámico está diseñado para aplicaciones
-                    que requieren una vista panorámica de 360°, 270° o 180°
-                    para el conocimiento de la situación, como el mapa de multitudes
-                    y la densidad de vehículos. Su cámara PTZ de alta velocidad y la
-                    tecnología EPTZ pueden rastrear rápida y automáticamente objetivos
-                    en movimiento sin perder detalles del comportamiento del objetivo. Es una solución de vigilancia perfecta que puede reemplazar múltiples cámaras convencionales, reducir la complejidad y ahorrar costos de instalación y mantenimiento.
+                Desde edificios hasta centros comerciales, y desde la orientación del tráfico hasta ciudades seguras y más allá, Hikvision ofrece un conjunto completo de soluciones industriales. Con estas soluciones, no se trata solo de disfrutar de los sistemas de seguridad más modernos. También se trata de utilizar estos productos para mejorar la eficiencia operativa y hacer que su flujo de trabajo sea más inteligente. Ya sea que se trate de proyectos pequeños a medianos que necesitan solo unas pocas docenas de dispositivos, o proyectos grandes que requieren miles, Hikvision ofrece continuamente una visión clara y crea valor para los clientes. Cada industria enfrenta desafíos únicos, y es por eso que todas nuestras soluciones se adaptan a las necesidades específicas de cada escenario. Explore las soluciones de la industria de Hikvision hoy y no dude en ponerse en contacto con nuestro equipo si desea obtener más información sobre funciones específicas o necesita una solución por encargo. Esperamos poder servirle.
                 </p>
             </div>
             <HeaderPano />

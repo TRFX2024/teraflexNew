@@ -15,7 +15,7 @@ const Formulario = () => {
                 </div>
                 <div className="conIcons">
                     <MailOutlined/>
-                    <a href="ailto:contacto@montepalermo.com">contacto@montepalermo.com</a>
+                    <a href="mailto:contacto@montepalermo.com">contacto@montepalermo.com</a>
                 </div>
                 <div className="conIcons">
                     <PhoneOutlined/>
