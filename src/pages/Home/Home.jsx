@@ -14,22 +14,23 @@ const Home = () => {
             <div id="Inicio">
                 <Header />
             </div>
+            <div id='Icons'>
+                <Icons/>
+            </div>
             <div id="Productos">
                 <Products />
             </div>
-            <Icons />
             <div id="Quienes">
                 <Quienes />
             </div>
-            <div id="Panoramica">
+            <div id='Panoramica'>
                 <Panoramic />
+                <Test />
             </div>
             <div id="Contacto">
                 <Contacto />
             </div>
-            <div className="">
-                <Test/>
-            </div>
+
         </div>
     );
 }

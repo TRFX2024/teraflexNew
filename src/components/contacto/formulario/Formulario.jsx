@@ -1,9 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './formulario.css';
 import { Button, ConfigProvider, Input } from 'antd';
 import { MailOutlined, PhoneOutlined, PushpinOutlined } from '@ant-design/icons';
 const { TextArea } = Input;
 const Formulario = () => {
+
+    const [nombre, setnombre] = useState();
+    const [email, setemail] = useState();
+    const [mensaje, setmensaje] = useState();
+
+    
 
     return (
         <div className='formulario'>
@@ -37,17 +43,19 @@ const Formulario = () => {
                     >
                         <div className="inputs">
                             <p>Nombre</p>
-                            <Input placeholder="Nombre" className='form-text' />
+                            <Input placeholder="Nombre" className='form-text' onChange={(e)=> setnombre(e.target.value)}/>
                         </div>
                         <div className="inputs">
                             <p>Correo electronico</p>
-                            <Input placeholder="Correo electronico" className='form-text' />
+                            <Input placeholder="Correo electronico" className='form-text' onChange={(e) => setemail(e.target.value)}/>
                         </div>
                         <div className="inputs">
                             <p>Mensaje</p>
-                            <TextArea placeholder="Mensaje" className='form-area' />
+                            <TextArea placeholder="Mensaje" className='form-area' onChange={(e)=> setmensaje(e.target.value)} />
                         </div>
-                        <Button type='primary' className='btn-form'>Enviar</Button>
+                        <Button type='primary' className='btn-form' onClick={() => (
+                            window.open(`https://wa.me/993248590?text= Contacto desde pagina web,  Nombre: ${nombre}, Email: ${email}, Mensaje: ${mensaje}`)
+                        )}>Enviar</Button>
                     </ConfigProvider>
                 </div>
             </div>

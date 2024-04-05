@@ -8,15 +8,11 @@ const Icons = () => {
             <div className="icons">
                 <div className="text-icons">
                     <BookOutlined className='icon' />
-                    <p className='text'>Blog</p>
-                </div>
-                <div className="text-icons">
-                    <LikeOutlined className='icon'/>
-                    <p className='text'>Historias de exito</p>
+                    <a href="#Quienes"><p className='text'>Quienes Somos</p></a>
                 </div>
                 <div className="text-icons">
                     <FileProtectOutlined className='icon'/>
-                    <p className='text'>Tecnología</p>
+                    <a href="#Contacto"><p className='text'>Contacto</p></a>
                 </div>
             </div>
         </div>

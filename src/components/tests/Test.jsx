@@ -28,7 +28,6 @@ const Test = () => {
     return (
         <div className='test'>
             <div className="test-container">
-                <h1>Descripción general</h1>
                 <p>La creación de un ambiente seguro y sereno es esencial para que las ciudades se desarrollen y prosperen. Con mayores densidades urbanas, las ciudades necesitan tecnologías más avanzadas para proteger a las personas y las propiedades. En años anteriores, la administración urbana dependía completamente del hombre para garantizar la seguridad: la policía y los guardias de seguridad privada. Con el surgimiento de las tecnologías de video, las ciudades adoptaron una manera mucho más eficaz de observar las cosas con atención</p>
                 <div className="test-content">
                     {
@@ -95,13 +94,25 @@ const Test = () => {
                         <h1>Fase 3: abrir nuevos caminos con socios y usarios finales por todo el pais</h1>
                         <div className="fases-desc">
                             <div className="description">
-                                <img src={fase3} className='imgHikes' alt="" />
-                                <h3>Sistema de contro</h3>
+                                <h3>Sistema de control</h3>
+                                <p>A medida que las tecnologías de inteligencia artificial evolucionan, 
+                                    la seguridad urbana entra en una nueva 
+                                    era inteligente con mejoras sin precedentes en la eficiencia.</p>
+
+                            </div>
+                            <div className="description">
+                                <h3>Centro de datos</h3>
+                                <p>Las cinco capas de sistemas de control se unen para crear una 
+                                    cobertura integral de una ciudad, pero esto no es suficiente. 
+                                    Una ciudad segura completa requerirá 
+                                    inevitablemente la construcción de un sistema central.</p>
+
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <img src={fase3} className='imgHikes' alt="" />
         </div>
     );
 }
